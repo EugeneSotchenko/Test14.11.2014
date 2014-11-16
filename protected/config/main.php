@@ -12,6 +12,7 @@ return array(
 	'name'=>'Горно-Химическая компания',
 	'sourceLanguage'=>'en',
 	'language'=>'ru',
+	//connect theme
 	'theme'=>'test_theme',
 
 	// preloading 'log' component
@@ -41,7 +42,7 @@ return array(
 		'rights'=>  array
 		(
 			'install'=>true,
-			// 'superusername'=>'admin',
+			'superuserName'=>'admin',
 		),
 		//add default roles for unregitredUsers
 		'authManager'=>array(
