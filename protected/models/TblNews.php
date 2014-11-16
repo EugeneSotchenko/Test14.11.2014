@@ -21,7 +21,33 @@
  * @property string $text_en
  */
 class TblNews extends CActiveRecord
+
 {
+	//for lang
+	public function defLang()
+	{
+		return array(
+			'condition' => "lang=:lang",
+			'params' => array
+			(
+				':lang' => Yii::app()->language,
+
+			),
+		);
+	}
+
+	public function lang($lang)
+	{
+		$this->getDbCriteria()->mergeWith(array(
+			'condition' => "lang=:lang",
+			'params' => array(
+				':lang' => $lang,
+			)
+		));
+		return $this;
+	}
+
+
 	/**
 	 * @return string the associated database table name
 	 */

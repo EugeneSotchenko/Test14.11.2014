@@ -342,6 +342,7 @@
 
 
 
+<?php// echo $content; ?>
 
 
 
@@ -353,54 +354,3 @@
 
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    <div id="content" role="main">
-    <?php echo $content; ?>
-
-        <hr /> <!-- Post seperator - Not the most optimal solution -->
-        
-        <article class="post">
-       
-    </div> <!-- #content -->
-    
-    <aside id="sidebar" role="complementary">
-    
-        <aside class="widget">
-            <h3>Sidebar heading</h3>
-            
-            <?/*php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		)); */?>
-        </aside> <!-- .widget -->
-        
-
-    
-</div> <!-- #main -->
-<footer id="footer">
-        <!-- You're free to remove the credit link to Jayj.dk in the footer, but please, please leave it there :) -->
-        <p>
-            Copyright &copy; 2014 <a href="#">mushfiq.me</a>
-            <span class="sep">|</span>
-            Design by <a href="http://jayj.dk" title="Design by Jayj.dk">Jayj.dk</a>
-        </p>
-    </footer> <!-- #footer -->
-    
-    <div class="clear"></div>
-
-<!--[if IE]><?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/excanvas.js'); ?><![endif]-->   
-<?php //Yii::app()->clientScript->registerCoreScript('jquery'); ?>
-
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-    
-
-
-</body>
-</html>

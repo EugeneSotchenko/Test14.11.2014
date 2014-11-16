@@ -34,6 +34,8 @@
 				array('label'=>'Производство', 'url'=>array('admin/tblmanaf')),
 				array('label'=>'Ролики', 'url'=>array('admin/youtube')),
 				array('label'=>'Страницы', 'url'=>array('admin/pages')),
+				array('label'=>'Пользователи', 'url'=>array('user')),
+				array('label'=>'Права', 'url'=>array('rights')),
 				array('label'=>'Войти', 'url'=>array('admin/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Выйти ('.Yii::app()->user->name.')', 'url'=>array('admin/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
 				/*

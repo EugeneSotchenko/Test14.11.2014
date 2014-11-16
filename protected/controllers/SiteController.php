@@ -75,6 +75,7 @@ class SiteController extends Controller
 	/**
 	 * Displays the login page
 	 */
+	/*
 	public function actionLogin()
 	{
 		$model=new LoginForm;
@@ -101,11 +102,13 @@ class SiteController extends Controller
 	/**
 	 * Logs out the current user and redirect to homepage.
 	 */
+	/*
 	public function actionLogout()
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+	*/
 	//add smtp google email
 	/*
 		public function mailsend($to,$from,$subject,$message){
