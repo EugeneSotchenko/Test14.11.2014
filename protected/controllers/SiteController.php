@@ -106,4 +106,20 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+	//add smtp google email
+	/*
+		public function mailsend($to,$from,$subject,$message){
+		$mail=Yii::app()->Smtpmail;
+		$mail->SetFrom($from, 'From NAme');
+		$mail->Subject    = $subject;
+		$mail->MsgHTML($message);
+		$mail->AddAddress($to, "");
+		if(!$mail->Send()) {
+			echo "Mailer Error: " . $mail->ErrorInfo;
+		}else {
+			echo "Message sent!";
+		}
+
+	}
+*/
 }
